@@ -1,15 +1,12 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: The best way to predict future is to invent it
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Hey there, je suis Mariem Zaouali!
 
-- I rock a great mustache
-- I'm extremely loyal to my family
 
-What else do you need?
 
 ### My story
 
