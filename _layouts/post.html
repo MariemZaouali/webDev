@@ -101,7 +101,12 @@ layout: base
         window.getSelection().addRange(range);
         try {
           document.execCommand('copy');
-          alert('Code copied to clipboard!');
+          button.textContent = 'Copied'; // Change button text
+          button.classList.add('copied'); // Add copied class
+          setTimeout(() => {
+            button.textContent = 'Copy'; // Reset button text after delay
+            button.classList.remove('copied'); // Remove copied class
+          }, 2000); // Delay in milliseconds
         } catch (err) {
           console.error('Failed to copy code: ', err);
         }
@@ -125,10 +130,17 @@ layout: base
     position: absolute;
     top: 10px;
     right: 10px;
+    transition: background-color 0.3s;
   }
 
   .copy-button:hover {
     background-color: #45a049;
+  }
+
+  .copy-button.copied {
+    background-color: #d3d3d3; /* Gray color */
+    color: #333;
+    cursor: not-allowed;
   }
 
   pre {
