@@ -1,0 +1,51 @@
+---
+layout: post
+title: TP1 Building websites using HTML5, CSS3 and Javascript
+subtitle: Premier TP
+cover-img: /assets/img/path.jpg
+thumbnail-img: /assets/img/thumb.png
+share-img: /assets/img/path.jpg
+tags: [books, test]
+author: Mariem ZAOUALI
+---
+
+#TP : Création d'un site web avec HTML5, CSS et Javascript
+
+Dans ce TP, nous allons créer un site web en utilisant **HTML5**, **CSS3** et **Javascript**. Ce TP comprend deux parties indépendantes :
+
+- La première concerne la création d’un site web **HTML5**, **CSS3** et **Javascript**.
+- La deuxième concerne la création d’un site web avec une partie Javascript plus prononcée.
+
+## Outils à utiliser
+
+- Un éditeur : **Visual Studio Code**
+- Un navigateur
+- **Live Server**
+
+**Étapes :**
+
+1. Cliquer sur **"Auto Save"** dans le menu de Visual Studio Code.
+2. Préparer la structure de la page.
+
+---
+
+### Créez la page `index.html`
+
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Bienvenue à notre site web Cake's Shop</title>
+    <meta name="author" content="Bethany's Pie Shop">
+    <meta name="description" content="Store front for Bethany's Pie Shop">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+   
+</body>
+
+</html>
+```
