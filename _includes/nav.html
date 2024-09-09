@@ -70,15 +70,16 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
 
 <script>
-  document.getElementById('generatePDF').addEventListener('click', function () {
-    html2canvas(document.body).then(canvas => {
-      var imgData = canvas.toDataURL('image/png');
-      var { jsPDF } = window.jspdf;
-      var doc = new jsPDF();
-      doc.addImage(imgData, 'PNG', 10, 10);
-      doc.save('page.pdf');
-    });
-  });
+html2canvas(document.body, {
+  onrendered: function(canvas) {
+    var imgData = canvas.toDataURL('image/png');
+    var { jsPDF } = window.jspdf;
+    var doc = new jsPDF();
+    doc.addImage(imgData, 'PNG', 10, 10);
+    doc.save('page.pdf');
+  }
+});
+
 </script>
 
 {% include search.html %}
