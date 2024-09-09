@@ -30,6 +30,14 @@
           </li>
         {%- endif -%}
       {%- endfor -%}
+
+      <!-- Bouton pour générer le PDF -->
+      <li class="nav-item">
+        <button id="generatePDF" class="btn btn-outline-primary nav-link" style="border: none; background: none;">
+          Télécharger PDF
+        </button>
+      </li>
+
       {% if site.post_search %}
         <li class="nav-item">
           <a class="nav-link" id="nav-search-link" href="#" title="Search">
