@@ -68,17 +68,18 @@
 </nav>
 
 
-
 <script>
-    document.getElementById('generatePDF').addEventListener('click', function () {
-      html2canvas(document.body).then(canvas => {
-        var imgData = canvas.toDataURL('image/png');
-        var { jsPDF } = window.jspdf;
-        var doc = new jsPDF();
-        doc.addImage(imgData, 'PNG', 10, 10);
-        doc.save('page.pdf');
-      }).catch(error => {
-        console.error('Erreur lors de la génération du PDF:', error);
+    document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('generatePDF').addEventListener('click', function () {
+        html2canvas(document.body).then(canvas => {
+          var imgData = canvas.toDataURL('image/png');
+          var { jsPDF } = window.jspdf;
+          var doc = new jsPDF();
+          doc.addImage(imgData, 'PNG', 10, 10);
+          doc.save('page.pdf');
+        }).catch(error => {
+          console.error('Erreur lors de la génération du PDF:', error);
+        });
       });
     });
   </script>
